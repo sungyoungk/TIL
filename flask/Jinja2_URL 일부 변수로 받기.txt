@@ -1,0 +1,24 @@
+2022.05.09.
+
+//Jinja2로 URL 일부를 변수로 받기//
+
+// (1)브라우저에 해당 API로 요청보내기//
+//(브라우저 주소창)http://localhost:5000/detail?word_give=hello//
+
+
+//서버에서 파라미터 값을 받아 HTML로 넘겨주기//
+//app.py//
+@app.route('/detail')
+def detail():
+    word_receive = request.args.get("word_give")
+    return render_template("detail.html", word=word_receive)
+
+
+//HTML에서 word라는 변수에 저장된 값 나타내기//
+//받은 단어는 {{ word }}//
+
+
+//URL의 일부를 변수로 받기//
+@app.route('/detail/<keyword>')
+def detail(keyword):
+    return render_template("detail.html", word=keyword)
