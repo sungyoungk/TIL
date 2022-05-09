@@ -1,0 +1,15 @@
+//Overview_Jinja2//
+
+//jinja2:프레임워크에서 사용하는 템플릿 언어//
+//'템플릿'이 되는 HTML 문서에 데이터가 들어갈 곳을 표시//
+
+
+//1. 서버에서 값 보내주기//
+//app.py//
+@app.route('/')
+def main():
+    myname = "sparta"
+    return render_template("index.html", name=myname)
+
+//2. html 파일에서 값이 들어갈 자리를 jinja2로 표시//
+<h3>Hello, {{ name }}!</h3>
