@@ -1,0 +1,99 @@
+2022.05.09
+//Jinja2 템플릿 언어 응용_for문//
+
+// requests 요청보내기 //
+//============ app.py ==========//
+
+// requests 요청(get타입으로)후 r 변수에 대입//
+//r 을 Json 형식으로//
+
+@app.route('/detail')
+def detail():
+    r = requests.get('http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99')
+    response = r.json()
+    rows = response['RealtimeCityAir']['row']
+    
+    return render_template("detail.html", rows=rows) //렌더링할 html에 정보 보내기'rows=rows'//
+
+
+
+//========= 클라이언트 사이드 index.html ==========//
+
+// (1)첫번째 구의 정보를 태그로 만들기//
+<li>{{ rows[0].MSRSTE_NM }}: {{ rows[0].IDEX_MVL }}</li>
+
+// (2) 변수에 저장하기 //
+{% set gu_name = rows[0].MSRSTE_NM %}
+{% set gu_mise = rows[0].IDEX_MVL %}
+<li>{{ gu_name }}: {{ gu_mise }}</li>
+
+//이제 자료 하나가 아니라 for문으로 리스트를 만들어 보자//
+// (3)for 문으로 리스트 생성을 위한 태그 만들기//
+{% for row in rows %}
+    {% set gu_name = row.MSRSTE_NM %}
+    {% set gu_mise = row.IDEX_MVL %}
+    <li>{{ gu_name }}: {{ gu_mise }}</li>
+{% endfor %}      // Jinja2는 꼭 endfor로 종료지점을 지정해야함//
+
+// (4) 조건문으로 조건 설정 //
+{% if gu_mise >= 50 %}
+    <li>{{ gu_name }}: {{ gu_mise }}</li>
+{% endif %}
+
+
+
+//================ 아래는 완성본 =================//
+//================= index.html ===============//
+<body>
+<h1>상세페이지</h1>
+<button onclick=" window.location.href='/'">메인으로 돌아가기</button>
+<ul class= "mise_list" id="gu_list" >
+    {% for row in rows %}
+    {% set gu_name = row.MSRSTE_NM %}
+    {% set gu_mise = row.IDEX_MVL %}
+    {% if gu_mise >= 60 %}
+    <li>{{ gu_name }}: {{ gu_mise }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</body>
+
+</html>
+
+
+
+//================= app.py ==================//
+
+from flask import Flask, render_template
+import requests
+
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def main():
+    myname = "sparta"
+    return render_template("index.html", name=myname)
+
+
+@app.route('/detail')
+def detail():
+    r = requests.get('http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99')
+    response = r.json()
+    rows = response['RealtimeCityAir']['row']
+    return render_template("detail.html", rows=rows)
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0', port=5000, debug=True)
+
+
+
+
+// ======= 회고 ======= //
+// Jinja2 문법 {{}} , {% %} 을 알수 있었음 //
+// Jinja 2는 for문 사용시 파이선과  문법이 같음 {% for row in rows %} //
+// ninja 2에서는 종료 지점을 명시해야함 
+
+
