@@ -45,7 +45,7 @@ https://www.docker.com/get-started/ <br>
 https://emflant.tistory.com/235 <br>
 
 
-### 3. 의존성 추가 <br>
+### 3. Reddis 적용 예시 <br>
 https://zara49.tistory.com/196
 
 
