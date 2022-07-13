@@ -36,7 +36,7 @@
 <br>
 
 
-##  😎 Spring Boot와 Redis 연계하기 <br>
+##  😎 Spring Boot와 Redis 적용하기 <br>
 
 ### 1. Docker 설치<br>
 https://www.docker.com/get-started/ <br>
