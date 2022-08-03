@@ -10,6 +10,8 @@ Today I learned
 
 + [@Configuration 안에 @Bean 등록 하는 이유](https://github.com/sungyoungk/TIL/blob/master/Spring/%40Configuration%EA%B3%BC%20%40bean.md)
 
++ [@ComponentScan의 시작 위치 지정](https://github.com/sungyoungk/TIL/blob/master/Spring/%40ComponentScan%EC%9D%98%20%ED%83%90%EC%83%89%EC%9C%84%EC%B9%98%EC%99%80%20%EA%B8%B0%EB%B3%B8%20%EC%8A%A4%EC%BA%94%EB%8C%80%EC%83%81.md)
+
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
 
