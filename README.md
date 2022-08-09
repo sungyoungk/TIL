@@ -25,6 +25,7 @@
 + [생성자 주입을 써야하는 이유](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%8D%A8%EC%95%BC%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
 + [Lombok과 최신 트렌드](https://github.com/sungyoungk/TIL/blob/master/Spring/%EB%A1%AC%EB%B3%B5%EA%B3%BC%20%EC%B5%9C%EC%8B%A0%20%ED%8A%B8%EB%A0%8C%EB%93%9C.md)
 + [조회된 빈이 2개 이상인 문제](https://github.com/sungyoungk/TIL/new/master/Spring)
++ [Autowired필드명, @Qualifier, @Primary](https://github.com/sungyoungk/TIL/blob/master/Spring/Autowired%ED%95%84%EB%93%9C%EB%AA%85%2C%20%40Qualifier%2C%20%40Primary.md)
 
 
 ## 🐧 Linux
