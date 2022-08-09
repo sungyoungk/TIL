@@ -25,6 +25,8 @@
 + [다양한 의존관계 주입방법](https://github.com/sungyoungk/TIL/blob/master/Spring/%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84%20%EC%A3%BC%EC%9E%85%20%EB%B0%A9%EB%B2%95.md)
 + [옵션처리](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%98%B5%EC%85%98%EC%B2%98%EB%A6%AC.md)
 + [생성자 주입을 써야하는 이유](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%8D%A8%EC%95%BC%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
++ [Lombok과 최신 트렌드](https://github.com/sungyoungk/TIL/blob/master/Spring/%EB%A1%AC%EB%B3%B5%EA%B3%BC%20%EC%B5%9C%EC%8B%A0%20%ED%8A%B8%EB%A0%8C%EB%93%9C.md)
+
 
 
 ## 🐧 Linux
