@@ -39,3 +39,5 @@
 + [구간합 구하기_백준 11659](https://github.com/sungyoungk/TIL/blob/master/algorithm/003%20%EA%B5%AC%EA%B0%84%20%ED%95%A9%20%EA%B5%AC%ED%95%98%EA%B8%B0.md)
 
 
+## 🔥 참고 블로그
+- [느리더라도 꾸준하게](https://steady-coding.tistory.com/) - Spring, AWS 배포 관련
