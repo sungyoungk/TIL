@@ -27,7 +27,7 @@
 + [조회된 빈이 2개 이상인 문제](https://github.com/sungyoungk/TIL/new/master/Spring)
 + [Autowired필드명, @Qualifier, @Primary](https://github.com/sungyoungk/TIL/blob/master/Spring/Autowired%ED%95%84%EB%93%9C%EB%AA%85%2C%20%40Qualifier%2C%20%40Primary.md)
 + [애노테이션 직접 만들기](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98%20%EC%A7%81%EC%A0%91%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
-+[조회한 빈이 모두 필요할 때, List, Map](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%A1%B0%ED%9A%8C%ED%95%9C%20%EB%B9%88%EC%9D%B4%20%EB%AA%A8%EB%91%90%20%ED%95%84%EC%9A%94%ED%95%A0%20%EB%95%8C%2C%20List%2C%20Map.md)
++ [조회한 빈이 모두 필요할 때, List, Map](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%A1%B0%ED%9A%8C%ED%95%9C%20%EB%B9%88%EC%9D%B4%20%EB%AA%A8%EB%91%90%20%ED%95%84%EC%9A%94%ED%95%A0%20%EB%95%8C%2C%20List%2C%20Map.md)
 
 
 
