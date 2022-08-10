@@ -83,7 +83,7 @@
 ```java
 
 @Autowired
-  public DiscountPolicy setDiscountPolicy(@Qualifier("mainDiscountPolicy")
+  public void setDiscountPolicy(@Qualifier("mainDiscountPolicy")
   DiscountPolicy discountPolicy) {
       this.discountPolicy = discountPolicy;
   }
