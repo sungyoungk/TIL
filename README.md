@@ -1,11 +1,8 @@
 # 👨🏻‍💻 TIL / Today I learned
 
 
-
-
 ## ☕️ Java
 + [어노테이션](https://github.com/sungyoungk/TIL/blob/master/Java/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98.md)
-
 
 
 ## 🌱 Spring
@@ -16,7 +13,6 @@
 + [@ComponentScan의 시작 위치 지정](https://github.com/sungyoungk/TIL/blob/master/Spring/%40ComponentScan%EC%9D%98%20%ED%83%90%EC%83%89%EC%9C%84%EC%B9%98%EC%99%80%20%EA%B8%B0%EB%B3%B8%20%EC%8A%A4%EC%BA%94%EB%8C%80%EC%83%81.md)
 + [필터](https://github.com/sungyoungk/TIL/blob/master/Spring/%ED%95%84%ED%84%B0.md)
 + [빈 중복 등록과 충돌](https://github.com/sungyoungk/TIL/blob/master/Spring/bean%20%EC%A4%91%EB%B3%B5%20%EB%93%B1%EB%A1%9D%EA%B3%BC%20%EC%B6%A9%EB%8F%8C.md)
-
 
 
 #### 의존관계 자동주입 [(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
@@ -30,18 +26,17 @@
 + [조회한 빈이 모두 필요할 때, List, Map](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%A1%B0%ED%9A%8C%ED%95%9C%20%EB%B9%88%EC%9D%B4%20%EB%AA%A8%EB%91%90%20%ED%95%84%EC%9A%94%ED%95%A0%20%EB%95%8C%2C%20List%2C%20Map.md)
 + [빈 등록시, 자동/수동 등록의 적용 기준](https://github.com/sungyoungk/TIL/blob/master/Spring/%EB%B9%88%20%EB%93%B1%EB%A1%9D%EC%8B%9C%20%EC%9E%90%EB%8F%99,%20%EC%88%98%EB%8F%99%EC%9D%98%20%EC%98%AC%EB%B0%94%EB%A5%B8%20%EC%8B%A4%EB%AC%B4%20%EC%9A%B4%EC%98%81%20%EA%B8%B0%EC%A4%80.md)
 
+#### 빈 생명주기 콜백 [(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
 
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
 
 
-
 ## 🔥 Algorithm
 + [숫자의 합_백준 11720](https://github.com/sungyoungk/TIL/blob/master/algorithm/001%20%EC%88%AB%EC%9E%90%EC%9D%98%ED%95%A9.md)
 + [평균 구하기_백준 1546](https://github.com/sungyoungk/TIL/blob/master/algorithm/002%20%ED%8F%89%EA%B7%A0%20%EA%B5%AC%ED%95%98%EA%B8%B0.md)
 + [구간합 구하기_백준 11659](https://github.com/sungyoungk/TIL/blob/master/algorithm/003%20%EA%B5%AC%EA%B0%84%20%ED%95%A9%20%EA%B5%AC%ED%95%98%EA%B8%B0.md)
-
 
 <br>
 
