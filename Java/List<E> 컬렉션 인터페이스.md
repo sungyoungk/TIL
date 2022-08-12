@@ -84,6 +84,8 @@
   aList.remove(0)        // 오류(UnsupportedOperationException)
   
   ```
+
+  <br>
   
 ## 📌 `List<E>`의 주요 메서드
 
