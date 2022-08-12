@@ -3,6 +3,7 @@
 
 ## ☕️ Java
 + [어노테이션](https://github.com/sungyoungk/TIL/blob/master/Java/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98.md)
++ [List<E> 컬렉션 인터페이스.md](https://github.com/sungyoungk/TIL/blob/master/Java/List%3CE%3E%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 
 
 ## 🌱 Spring
