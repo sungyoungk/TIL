@@ -148,7 +148,54 @@ List<Integer> aList1 = new ArrayList<>();
   
   <br>
   
-  ### 🔎 컬렉션 변경하기 - **`set()`**
+  ### 🔎 데이터 변경하기 - **`set()`**
+  - 잘못된 인덱스값을 입력시에는 `IndexOutOfBoundsException` 발생! <br>
+    예) size()가 5 인데 set(8, 9)로 입력하는 경우
+  
+  ```java
+  
+  List<Integer> aList = new ArrayList<>();
+        aList.add(1); aList.add(2); aList.add(3); aList.add(4);
+
+        System.out.println(aList.toString());   // -> [1, 2, 3, 4]
+
+        aList.set(1, 5);
+
+        System.out.println(aList.toString());   // -> [1, 5, 3, 4]
+  
+  ```
+  
+  <br>
+  
+  ### 🔎 데이터 삭제하기 - **`remove`**, **`clear`**
+  - .remove(index)
+  - .remove(new Object(E))
+  -. clear()
+  
+  ```java
+  
+  List<Integer> aList = new ArrayList<>();
+        aList.add(1); aList.add(2); aList.add(3); aList.add(4);
+
+        System.out.println(aList.toString());  // -> [1, 2, 3, 4]
+
+        // remove(index)
+        aList.remove(1);
+        System.out.println(aList.toString());  // -> [1, 3, 4]
+
+        // remove(Object o)
+        aList.remove(new Integer(1));   // -> [3, 4]
+        System.out.println(aList.toString());
+
+        aList.clear();
+        System.out.println(aList.toString());  // -> []
+  
+  ```
+  
+  <br>
+  
+  ### 🔎 데이터 정보 추출하기 - **`isEmpty()`**, **`size()`**, **get(int index)**
+  
   
   
 
