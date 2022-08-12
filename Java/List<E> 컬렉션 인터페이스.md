@@ -257,7 +257,7 @@
 
 ``` java
   
-  System.out.println(Arrays.toString(integer2));
+  System.out.println(Arrays.toString(integer2);
   
 ```
 
