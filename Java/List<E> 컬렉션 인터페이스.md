@@ -217,6 +217,19 @@ List<Integer> aList1 = new ArrayList<>();
   ```
   
   
+    <br>
   
+### 🔎 배열로 변환하기 - **`toArray()`**, **`toArray(T[]t)`**
+- 리스트를 배열로 변환하는 2개의 메서드 활용법
+
+```java
+  
+  // toArray() aList = [1, 2, 3]
+  
+  Object[] object = aList.toArray();
+  System.out.println(A)
+  
+  
+```
 
 
