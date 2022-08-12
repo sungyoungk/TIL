@@ -148,7 +148,7 @@ List<Integer> aList1 = new ArrayList<>();
   
   <br>
   
-  ### 🔎 데이터 변경하기 - **`set()`**
+### 🔎 데이터 변경하기 - **`set()`**
   - 잘못된 인덱스값을 입력시에는 `IndexOutOfBoundsException` 발생! <br>
     예) size()가 5 인데 set(8, 9)로 입력하는 경우
   
@@ -167,7 +167,7 @@ List<Integer> aList1 = new ArrayList<>();
   
   <br>
   
-  ### 🔎 데이터 삭제하기 - **`remove`**, **`clear`**
+### 🔎 데이터 삭제하기 - **`remove`**, **`clear`**
   - .remove(index)
   - .remove(new Object(E))
   -. clear()
@@ -194,7 +194,24 @@ List<Integer> aList1 = new ArrayList<>();
   
   <br>
   
-  ### 🔎 데이터 정보 추출하기 - **`isEmpty()`**, **`size()`**, **get(int index)**
+### 🔎 데이터 정보 추출하기 - **`isEmpty()`**, **`size()`**, **get(int index)**
+  - 이번에는  ArrayList<E> 객체의 정보를 추출하는 메서드에 대해 알아보자
+  
+  ```java
+  
+  List<Integer> aList = new ArrayList<>();
+  aList.add(1); aList.add(2); aList.add(3); aList.add(4);
+
+  System.out.println(aList.toString());            // --> [1, 2, 3, 4]
+  System.out.println("size = " + aList.size());    // --> []
+
+  // get(index)
+  System.out.println(aList.get(0));                // --> 1
+
+  for(int i = 0; i < aList.size(); i++) {
+  System.out.println(i + "번째: " + aList.get(i));}  // 0번째: 1 1번째: 2 --- ~
+  
+  ```
   
   
   
