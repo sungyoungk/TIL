@@ -40,7 +40,7 @@
   
   <br>
   
-## List<E> 객체 생성하기
+## 📌 List<E> 객체 생성하기
 - List<E>는 인터페이스이기 때문에 객체 생성을 위해 List<E>를 상속받아 자식 클래스를 생성한 후, 자식 클래스로 객체를 생성해야한다
 - 하지만, 컬렉션 프레임워크 이용시, 프레임워크 안에 이미 필요한 클래스가 구현되어 있기 때문에 직접 인터페이스를 구현하지 않아도 된다.
 
@@ -67,6 +67,24 @@
   List<Integer> aList4 = new LinkedList<>();  // capacity = 0
   LinkedList<Integer> aList4 = new LinkedList<>(20); // 오류발생! LinkedList 는 capacity 지정 불가!
   
+  ```
   
+  <br>
+  
+## 📌 `Array.asList()` 메서드로 정적 컬렉션 객체 생성하기
+
+- 내부적으로 배열을 먼저 생성하고, 이를 List<E>로 래핑, 즉 포장만 한것
+- 따라서, **💡내부 구조는 배열과 동일**하므로 컬렉션 객체임에도 불구하고 저장 공간의 크기를 변경 할 수 없다
+
+```java
+  
+  List<Integer> aList = new Array.asList(1,2,3,4);
+  aList.set(1, 7);       // [1,7,2,4]
+  aList.add(5);          // 오류(UnsupportedOperationException)
+  aList.remove(0)        // 오류(UnsupportedOperationException)
   
   ```
+  
+## 📌 `List<E>`의 주요 메서드
+
+
