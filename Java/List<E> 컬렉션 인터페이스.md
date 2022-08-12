@@ -225,12 +225,27 @@
 
 ```java
   
-  // toArray() aList = [1, 2, 3]
-  
-  Object[] object = aList.toArray();
-  System.out.println(A)
-  
+        List<Integer> aList = new ArrayList<>();
+        aList.add(1);  aList.add(2); aList.add(3);
+        System.out.println(aList.toString());                // -> [1, 2, 3]
+
+        Object[] object = aList.toArray();
+        System.out.println(Arrays.toString(object));          // -> [1, 2, 3]
+
+        Integer[] integer1 = aList.toArray(new Integer[0]);
+        System.out.println(Arrays.toString(integer1));        // -> [1, 2, 3]
+
+        Integer[] integer2 = aList.toArray(new Integer[5]);
+        System.out.println(Arrays.toString(integer2));         // -> [1, 2, 3, null, null]
   
 ```
 
+#### 🌟 toArray()
+  
+- toArray 메서드는 원소의 타입과 관계 없이 모든 데이터를 Object[]로 리턴하기 때문에 저장 워소타입으로 다운캐스해 사용해야할 수 도 있음
+- 특정 타입으로 바로 변환하기 위해서는 **`toArray(T[] t)`** 메서드를 이용해 매개변수로 특정 타입의 배역 객체를 만들어 넣어주면 됨
+- **(toArray(T[] t) 메서드 사용시 주의점)** 매개변수로 전달되는 배열의 크기에 주의해야함
+- 리스트가 가지고 있는 데이터 개수보다 작은 크기의 배열을 넘겨주면 데이터 개수만큼 크기가 확장된 배열을 리턴함  <br>
+  ※ 그래서 보통 매개변수 크기가0인 배열을 넣어주는 방법을 사용함
+- 반대로, 리스트가 가지고 있는 데이터 개수보다 큰 크기의 배열을 넘겨주면 배열의 앞 부분에 데이터를 넣어 리턴하고 나머지 자리는 null값이 됨
 
