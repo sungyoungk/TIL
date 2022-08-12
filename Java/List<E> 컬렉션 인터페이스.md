@@ -168,7 +168,7 @@
   
   <br>
   
-### 🔎 데이터 삭제하기 - **`remove`**, **`clear`**
+### 🔎 데이터 삭제하기 - **`remove()`**, **`clear()`**
   - .remove(index)
   - .remove(new Object(E))
   -. clear()
