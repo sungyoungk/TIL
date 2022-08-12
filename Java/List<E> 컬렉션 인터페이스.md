@@ -210,6 +210,9 @@ List<Integer> aList1 = new ArrayList<>();
 
   for(int i = 0; i < aList.size(); i++) {
   System.out.println(i + "번째: " + aList.get(i));}  // 0번째: 1 1번째: 2 --- ~
+                                                    
+  aList.clear();
+  System.out.println(aList.isEmpty());              // -> true
   
   ```
   
