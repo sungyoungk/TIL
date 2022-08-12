@@ -87,6 +87,69 @@
 
   <br>
   
-## 📌 `List<E>`의 주요 메서드
+## 📌 `ArrayList<E>`의 구현 클래스
+`ArrayList<E>`는 대표적인 `List<E>` 구현 클래스로, `List<E>`가 가지고 있는 대표적인 데이터를 인덱스로 관리하는 기능, <br>
+저장 공간을 동적으로 관리하는 기능 등을 그대로 지니고 있다.
+  
+#### 🌟 ArrayList<E>의 특징
+> - List<E>인터페이스를 구현한 구현 클래스
+> - 배열처럼 수집(collect)한 원소(element)를 인덱스(index)로 관리하며 저장 용량(capacity)를 동적으로 관리한다 
+
+<br>
+  
+### 🔎 데이터 추가하기 - `add()`
+  
+#### 🌟 컬렉션 구현 클래서의 toString()
+  - 모든 컬렉션 구현 클래스는 이 메서드에서 모든 데이터를 한 번에 정리해 출력하도록 오버라이딩 되어있
+
+```java
+  
+        List<Integer> aList1 = new ArrayList<>();
+        
+        //add(<E> element)
+        aList1.add(3);
+        aList1.add(4);
+        aList1.add(5);
+
+        System.out.println(aList1.toString());  // [3, 4, 5]
+
+        // add(int index, E element)
+        aList1.add(1, 6);
+        System.out.println(aList1.toString());
+  
+```
+  
+` 컬렉션 객체 추가`
+```java
+
+List<Integer> aList1 = new ArrayList<>();
+        //add(<E> element)
+        aList1.add(3);
+        aList1.add(4);
+        aList1.add(5);
+
+        System.out.println(aList1.toString());  // [3, 4, 5]
+
+        // add(int index, E element)
+        aList1.add(1, 6);
+        System.out.println(aList1.toString());
+  
+  //===================================================
+  
+  List<Integer> aList2 = new ArrayList<>();
+  aList2.add(1);
+  aList2.add(2);
+  
+  System.out.println(aList2.add(aList1));    // -> [1, 2, 3, 4, 5] 객체를 통째로 추가할 수도 있음
+  
+  Syste.out.println(aList2.add(1, aList1));  // -> [1, 3, 4, 5, 2]  인덱스 지정해서 추가
+
+```
+  
+  <br>
+  
+  ### 🌟 컬렉션 변경하기 - **`set()`**
+  
+  
 
 
