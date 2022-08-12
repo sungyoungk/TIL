@@ -122,7 +122,7 @@
 ` 컬렉션 객체 추가 - addAll(객체)`
 ```java
 
-List<Integer> aList1 = new ArrayList<>();
+        List<Integer> aList1 = new ArrayList<>();
         //add(<E> element)
         aList1.add(3);
         aList1.add(4);
@@ -132,17 +132,18 @@ List<Integer> aList1 = new ArrayList<>();
 
         // add(int index, E element)
         aList1.add(1, 6);
-        System.out.println(aList1.toString());
+        System.out.println(aList1.toString());   // -> [3, 6, 4, 5]
+
   
-  //===================================================
-  
-  List<Integer> aList2 = new ArrayList<>();
-  aList2.add(1);
-  aList2.add(2);
-  
-  System.out.println(aList2.addAll(aList1));    // -> [1, 2, 3, 4, 5] 객체를 통째로 추가할 수도 있음
-  
-  Syste.out.println(aList2.addAll(1, aList1));  // -> [1, 3, 4, 5, 2]  인덱스 지정해서 추가
+        // 컬랙션 객체 
+        List<Integer> aList2 = new ArrayList<>();
+        aList2.add(1);
+        aList2.add(2);
+        aList2.addAll(aList1);                    // -> addAll(E)
+        System.out.println(aList2.toString());    // -> [1, 2, 3, 6, 4, 5] 객체를 통째로 추가할 수도 있음
+
+        aList2.addAll(aList1);
+        System.out.println(aList2.toString());  // -> [1, 2, 3, 6, 4, 5, 3, 6, 4, 5]  인덱스 지정해서 추가
 
 ```
   
