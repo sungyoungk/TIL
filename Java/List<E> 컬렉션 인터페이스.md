@@ -24,7 +24,7 @@
   - **즉, 저장공간이 동적으로 변환된다.**
   ```java
   
-        <String> aList = new ArrayList<>();
+       List<String> aList = new ArrayList<>();
 
         aList.add("가"); aList.add("나"); aList.add("다"); aList.add("라");
         aList.add("마"); aList.add("바"); aList.add("사");
