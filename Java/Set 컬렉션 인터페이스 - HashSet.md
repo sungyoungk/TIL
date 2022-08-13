@@ -65,11 +65,23 @@
 
 ```java
 
+Set<String> hSet = new HashSet<>();
+        hSet.add("가");
+        hSet.add("나");
+        hSet.add("다");
 
+        hSet.remove("나");
+        System.out.println(hSet.toString());  // -> [가, 다]
+
+        hSet.clear();
+        System.out.println(hSet);             //  -> 콜렉션 인터페이스는 toString()이 오버라이딩 되어 있어서 그냥 출력해도 됨
 
 ```
   
-   
+  <br>
+
+### 데이터 정보추출하기- isEmpty() / contains() / size() / iterator()
+
  
 
   
