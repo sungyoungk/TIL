@@ -209,10 +209,11 @@
   aList.add(1); aList.add(2); aList.add(3); aList.add(4);
 
   System.out.println(aList.toString());            // --> [1, 2, 3, 4]
-  System.out.println("size = " + aList.size());    // --> []
+  System.out.println("size = " + aList.size());    // --> 4
 
   // get(index)
   System.out.println(aList.get(0));                // --> 1
+  System.out.println(aList.get(1));                // --> 2
 
   for(int i = 0; i < aList.size(); i++) {
   System.out.println(i + "번째: " + aList.get(i));}  // 0번째: 1 1번째: 2 --- ~
