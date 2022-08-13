@@ -142,8 +142,13 @@
         aList2.addAll(aList1);                    // -> addAll(E)
         System.out.println(aList2.toString());    // -> [1, 2, 3, 6, 4, 5] 객체를 통째로 추가할 수도 있음
 
-        aList2.addAll(aList1);
-        System.out.println(aList2.toString());  // -> [1, 2, 3, 6, 4, 5, 3, 6, 4, 5]  인덱스 지정해서 추가
+        // addAll(int index, Collection<? extends E> c)
+        List<Integer> aList3 = new ArrayList<>();
+        aList3.add(1); aList3.add(2);
+        System.out.println(aList3.toString());   // -> [1, 2]
+        
+        aList3.addAll(1, aList3);
+        System.out.println(aList3.toString());   // -> [1, 1, 2, 2]
 
 ```
   
