@@ -107,16 +107,16 @@ Set<String> hSet = new HashSet<>();
 
 ```
 
-#### `isEmpty()`
+#### 📌 `isEmpty()`
 - 데이터가 비어있는지 여부를 알 수 있다
 
-#### `contains(Object o)`
+#### 📌 `contains(Object o)`
 - 객체 안에 해당 원소가 있는지를 boolean 값으로 리턴한다
 
-#### `size()`
+#### 📌 `size()`
 - 저장된 데이터 개수를 정수형으로 리턴한다
 
-#### `iterator()`
+#### 📌 `iterator()`
 - Set<E> 객체 내부의 데이터를 1개씩 꺼내 처리하고자 할때 사용하는 메서드
 - for 문은 Set<E> 객체 데이터가 인덱스 정보를 저장하지 않아서 사용할 수 없음
 - .iterator() 객체를 호출하면, 먼저 제네릭 클래스 타입인 Iterator<E> 객체가 생성된다
