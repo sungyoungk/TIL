@@ -82,6 +82,53 @@ Set<String> hSet = new HashSet<>();
 
 ### 데이터 정보추출하기- isEmpty() / contains() / size() / iterator()
 
+```java
+
+        Set<String> hSet = new HashSet<>();
+        System.out.println(hSet.isEmpty());           //  -> .isEmpty()
+
+
+        Set<String> hSet2 = new HashSet<>();
+        hSet2.add("a");
+        hSet2.add("b");
+        hSet2.add("c");
+        System.out.println(hSet2.contains("a"));       //  ->  .contains()
+
+
+        System.out.println(hSet2.size());              //  -> .size()
+
+
+        Iterator<String> iterator = hSet2.iterator();  //  -> iterator<E> 객체 호출
+        while(iterator.hasNext()) {                    //  -> .hasNext()
+            System.out.println(iterator.next() + " "); //  -> .Next()
+        }
+
+        System.out.println();
+
+```
+
+#### `isEmpty()`
+- 데이터가 비어있는지 여부를 알 수 있다
+
+#### `contains(Object o)`
+- 객체 안에 해당 원소가 있는지를 boolean 값으로 리턴한다
+
+#### `size()`
+- 저장된 데이터 개수를 정수형으로 리턴한다
+
+#### `iterator()`
+- Set<E> 객체 내부의 데이터를 1개씩 꺼내 처리하고자 할때 사용하는 메서드
+- for 문은 Set<E> 객체 데이터가 인덱스 정보를 저장하지 않아서 사용할 수 없음
+- .iterator() 객체를 호출하면, 먼저 제네릭 클래스 타입인 Iterator<E> 객체가 생성된다
+- 이 제네릭 타입은 당연히 Set<E> 객체가 저장하고 있는 원소 타입이다
+
+#### 🌟 Iterator<E> 클래스에서는 아래의 2가지 메서드만 기억하자!!
+> **hasNext()** : 다음으로 가리킬 원소의 존재 여부를 불리언 값으로 리턴
+> **next()** : 다음 원소 위치로 가서 읽은 값을 리턴
+
+- 여기서 주의할 점은, **최초 iterator<E> 객체가 생성되면 이 객체가 가르키는 값은 첫 워소 위치가 아닌 첫 원소 바로 이전의 위치값**이라는 것이다
+- 첫 번째 워소값을 읽으려면 **`iterator.next()`** 를 실행해야한다
+
  
 
   
