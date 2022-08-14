@@ -134,6 +134,30 @@ Set<String> hSet = new HashSet<>();
 - 여기서 주의할 점은, **최초 iterator<E> 객체가 생성되면 이 객체가 가르키는 값은 첫 워소 위치가 아닌 첫 원소 바로 이전의 위치값**이라는 것이다
 - 첫 번째 원소값을 읽으려면 **`iterator.next()`** 를 실행해야한다
 
- 
+  <br>
+
+### 배열로 변환하기- toString() / toString(T[]t)
+- List<E> 와 완벽히 같은 문법
+- 차이점은 출력시 데이터 입력 순서가 보장되지 않는다
+
+```java
+
+Set<String> hSet = new HashSet<>();
+        hSet.add("a");
+        hSet.add("b");
+        hSet.add("c");
+        System.out.println(hSet);                            // -> set<E> 생성 및 데이터 저장
+
+        Object[] objectArray = hSet.toArray();
+        System.out.println(Arrays.toString(objectArray));    // -> set<E>를 배열로 변환(오브젝트 타입)
+
+        String[] strings = hSet.toArray(new String[0]);
+        System.out.println(Arrays.toString(strings));        // -> set<E>를 다운캐스팅하여 배열로 변환(스트링 타입)
+
+        String[] strings2 = hSet.toArray(new String[5]);
+        System.out.println(Arrays.toString(strings2));       // -> 위와 같으나 초기 데이터 크기를 데이터 저장개수 보다
+                                                            //      크게 할 경우 null 값으로 기록됨
+
+```
 
   
