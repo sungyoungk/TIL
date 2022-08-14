@@ -41,7 +41,7 @@
   
   <br>
   
-  ### 데이터 추가하기 add() / addAll(Collection<? extends E> c)
+  ### 🔎 데이터 추가하기 add() / addAll(Collection<? extends E> c)
   ```java
   
   Set<String> hSet1 = new HashSet<>();
@@ -61,7 +61,7 @@
 
 <br>
 
-### 데이터 삭제하기 - remove() / clear()
+### 🔎 데이터 삭제하기 - remove() / clear()
 
 ```java
 
@@ -80,7 +80,7 @@ Set<String> hSet = new HashSet<>();
   
   <br>
 
-### 데이터 정보추출하기- isEmpty() / contains() / size() / iterator()
+### 🔎 데이터 정보추출하기- isEmpty() / contains() / size() / iterator()
 
 ```java
 
@@ -160,4 +160,7 @@ Set<String> hSet = new HashSet<>();
 
 ```
 
+<br>
+
+### 🔎 HashSet의 중복확인 매커니즘
   
