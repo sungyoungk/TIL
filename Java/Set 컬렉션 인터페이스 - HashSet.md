@@ -105,6 +105,11 @@ Set<String> hSet = new HashSet<>();
 
         System.out.println();
 
+
+        for(String s : hSet2) {                        // -> iterator 대신 forEach 구문도 사용 가능
+            System.out.println(s + " ");
+        }
+
 ```
 
 #### 📌 `isEmpty()`
