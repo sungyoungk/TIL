@@ -260,5 +260,129 @@ public class Test {
 
 ### 🔎 HashSet<E> 의 중복확인 매커니즘
 - HashSet<E> 의 중복확인은 다음과 같이 2단계로 처리된다
+- **`1단계`** : 두 객체의 Hashcode가 동일한지 비교
+- **`2단계`** : Hashcode가 동일하고 equals() 매서드가 true 를 리턴하면 두 객체는 동일한 객체로 인식(즉, 중복된 객체로 인식)
+
+<br>
+
+<img width="770" alt="스크린샷 2022-08-15 오후 3 45 42" src="https://user-images.githubusercontent.com/101084642/184588855-3081c995-84dd-450d-9c0f-32c943ebfead.png">
+
+<br>
+
+`(1) 두 메서드 모두 오버라이딩 하지 않았을때`
+
+'''java
+
+class A {
+    int data;
+
+    public A(int data){
+        this.data = data;
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+
+        Set<A> hashSet1 = new HashSet<>();
+
+        A a1 = new A(3);
+        A a2 = new A(3);
+
+        System.out.println(a1 == a2);       //  -> false
+        System.out.println(a1.equals(a2));  //  -> false
+        System.out.println(a1.hashCode() + "  " + a2.hashCode());   // -> 918221580  2055281021
+
+        hashSet1.add(a1);
+        hashSet1.add(a2);
+        System.out.println(hashSet1.size());  //  ->  2 
+    }
+}
+
+```
+
+`(2) equals 메서드만 오버라이딩 했을 때`
+
+```java
+
+class B extends Object{
+
+    int data;
+
+    public B(int data){
+        this.data = data;
+    }
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof B) {
+            if(this.data == ((B)obj).data)
+                return true;
+        }
+        return false;
+    }
+}
+
+public class TestTwo {
+    public static void main(String[] args) {
+        // equals() 오버라이딩 (ㅇ) + hashcode 오버라이팅(x)
+
+        Set<B> hashSet2 = new HashSet<>();
+        B b1 = new B(3);
+        B b2 = new B(3);
+        System.out.println(b1 == b2);          // false
+        System.out.println(b1.equals(b2));     // true
+        System.out.println(hashSet2.size());   // 다른 객체
+    }
+}
+
+```
+
+`(3) equals() 메서드 및 hashCode() 모두 오버라이딩 했을 때`
+- `.equals()`는 필드값이 동일하면 true를 리턴하도록 오버라이딩 함
+-  `hashCode()`는 Objects 클래스의 정적 메서드인 hash() 메서드를 사용해 필드값 기준으로 해시값을 생성하도록 했다
+- 이때는 **return(new Integer(data)).hashCode()** 또는 그냥 **data** 와 같이 간단히 써주기만 해도 된다
+```java
+
+class C extends Object{
+
+    int data;
+
+    public C(int data){
+        this.data = data;
+    }
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof C) {
+            if(this.data == ((C)obj).data)
+                return true;
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(data);   // 혹은 return (new Integer(data)).hashCode() 혹은 return data;
+    }
+}
+
+public class TestThree {
+    public static void main(String[] args) {
+        // equals() 오버라이딩(ㅇ), hashCode() 오버라이딩(ㅇ)
+
+        Set<C> hshSet3 = new HashSet<>();
+        C c1 = new C(3);
+        C c2 = new C(3);
+
+        System.out.println(c1 == c2);        //  -> false
+        System.out.println(c1.equals(c2));  // -? true
+        System.out.println(c1.hashCode() + "  " + c2.hashCode());
+
+        hashSet3.add(c1);
+        hashSet3.add(c2);
+        System.out.println(hashSet3.size());  //  -> 1(같은 객체)
+    }
+}
+
+```
 
   
