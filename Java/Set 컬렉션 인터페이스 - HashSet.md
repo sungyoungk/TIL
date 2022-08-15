@@ -136,7 +136,7 @@ Set<String> hSet = new HashSet<>();
 
   <br>
 
-### 배열로 변환하기- toString() / toString(T[]t)
+### 🔎 배열로 변환하기- toString() / toString(T[]t)
 - List<E> 와 완벽히 같은 문법
 - 차이점은 출력시 데이터 입력 순서가 보장되지 않는다
 
