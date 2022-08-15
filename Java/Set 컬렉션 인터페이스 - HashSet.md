@@ -216,8 +216,6 @@ public class HashCode extends Object {
 
 <br>
 
-<br>
-
 ### 🔎 `등가연산자(==)`  /  `.equals()`
 - **`등가연산자`**
   - 스택 메모리 값을 동등 비교한다
@@ -237,7 +235,30 @@ return (this == object)
 
 // equals 메서드를 오버라이딩 하지 않았을 때 등가연산과 equal() 비교
 
+class A {
+    int data;
 
+    public A(int data){
+        this.data = data;
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+
+        A a1 = new A(3);
+        A a2 = new A(3);
+
+        System.out.println(a1 == a2);       //  -> false
+        System.out.println(a1.equals(a2));  //  -> false  
+    }
+}
 
 ```
+
+<br>
+
+### 🔎 HashSet<E> 의 중복확인 매커니즘
+- HashSet<E> 의 중복확인은 다음과 같이 2단계로 처리된다
+
   
