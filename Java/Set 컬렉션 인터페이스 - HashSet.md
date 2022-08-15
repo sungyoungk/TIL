@@ -219,4 +219,25 @@ public class HashCode extends Object {
 <br>
 
 ### 🔎 `등가연산자(==)`  /  `.equals()`
+- **`등가연산자`**
+  - 스택 메모리 값을 동등 비교한다
+  - 기본자료형과 참조자료형은 스택메모리에 각각 실제값, 위치값을 저장하고 있다
+  - 즉 Object 의 **`equal()`** 메서드는 등가 연산과 완벽하게 동일히다
+```java
+
+public boolean equals(Objext object) {
+return (this == object)
+}
+
+```
+
+- **`equals()`** 메서드를 오버라이딩 하지 않았다면, 아래와 같이 **등가연산자와 equals() 메서드의 결과는 동일한 값을 가진다**
+
+```java
+
+// equals 메서드를 오버라이딩 하지 않았을 때 등가연산과 equal() 비교
+
+
+
+```
   
