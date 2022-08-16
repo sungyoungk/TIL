@@ -80,5 +80,12 @@ treeSet.first()                          // (o)
         System.out.println(treeSet.ceiling(26));  // -> 26
   
   ```
+  
+   #### ✅ 데이터 꺼내기
+  ```java
+  
+  
+  
+  ``` 
 
   
