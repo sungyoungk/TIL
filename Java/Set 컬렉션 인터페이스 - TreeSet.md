@@ -109,26 +109,42 @@ treeSet.first()                          // (o)
         }
 
         SortedSet<Integer> sSet = treeSet.headSet(20);
-        System.out.println(sSet);
+        System.out.println(sSet);                                   // [2, 4, ..., 16, 18]
 
         // 10. NavigableSet<E> headSet(E toElement, boolean inclusive)
         NavigableSet<Integer> nSet = treeSet.headSet(20, false);
-        System.out.println(nSet);
+        System.out.println(nSet);                                   // [2, 4, ..., 16, 18]
 
-        nSet = treeSet.headSet(20, true);
+        nSet = treeSet.headSet(20, true);                           // [2, 4, ..., 18, 20]             
         System.out.println(nSet);
 
         // 11. SortedSet<E> tailSet(E element)
         sSet = treeSet.tailSet(20);
-        System.out.println(sSet);
+        System.out.println(sSet);                                   // [20, 22, ... 48, 50]
 
         // 12. NavigableSet<E> tailSet(E element, boolean inclusive)
         nSet = treeSet.tailSet(20, false);
-        System.out.println(nSet);
+        System.out.println(nSet);                                   // [22, 24, ..., 48, 50]
 
         nSet = treeSet.tailSet(20, true);
         System.out.println(nSet);
   
   
   ```
+  
+   #### ✅ 데이터 부분 집합 생성 - subSet()
+   ```java
+  
+   // 13. SortedSet<E> subSet(E fromElement, E toElement)
+        sSet = treeSet.subSet(10, 20);
+        System.out.println(sSet);                                  // [10, 12, 14, 16, 18]
+
+        // 14. subSet(E fromElement, boolean fromInclusive, E toElement, boolean toInclusive)
+        nSet = treeSet.subSet(10,true, 20, false);
+        System.out.println(nSet);                                  // [10, 12, 14, 16, 18]
+
+        nSet = treeSet.subSet(10,false, 20, true);
+        System.out.println(nSet);                                  // [12, 14, 16, 18, 20]
+  
+   ```
   
