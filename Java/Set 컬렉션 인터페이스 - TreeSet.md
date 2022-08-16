@@ -56,6 +56,8 @@ treeSet.first()                          // (o)
   
   ```
   
+  <br>
+  
   #### ✅ 데이터 검색
   ```java
   
@@ -81,6 +83,8 @@ treeSet.first()                          // (o)
   
   ```
   
+  <br>
+  
    #### ✅ 데이터 꺼내기
   ```java
   
@@ -100,6 +104,8 @@ treeSet.first()                          // (o)
   
   ``` 
 
+  <br>
+  
    #### ✅ 데이터 부분 집합 생성 - headSet(), tailSet()
    ```java
   
@@ -132,6 +138,8 @@ treeSet.first()                          // (o)
   
   ```
   
+  <br>
+  
    #### ✅ 데이터 부분 집합 생성 - subSet()
    ```java
   
@@ -147,6 +155,8 @@ treeSet.first()                          // (o)
         System.out.println(nSet);                                  // [12, 14, 16, 18, 20]
   
    ```
+  
+  <br>
   
   #### ✅ 데이터 정렬 - descendingSet()
   
