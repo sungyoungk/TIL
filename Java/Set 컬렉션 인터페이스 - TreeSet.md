@@ -135,7 +135,7 @@ treeSet.first()                          // (o)
    #### ✅ 데이터 부분 집합 생성 - subSet()
    ```java
   
-   // 13. SortedSet<E> subSet(E fromElement, E toElement)
+        // 13. SortedSet<E> subSet(E fromElement, E toElement)
         sSet = treeSet.subSet(10, 20);
         System.out.println(sSet);                                  // [10, 12, 14, 16, 18]
 
@@ -147,4 +147,17 @@ treeSet.first()                          // (o)
         System.out.println(nSet);                                  // [12, 14, 16, 18, 20]
   
    ```
+  
+    #### ✅ 데이터 정렬 - descendingSet()
+  ```java
+  
+        // 15. NavigableSet<E> descendingSet()
+        System.out.println(treeSet);                               // [2, 4, ..., 48, 50]
+        NavigableSet<Integer> descendingSet = treeSet.descendingSet();
+        System.out.println(descendingSet);                         // [50, 48, ..., 4, 2]
+
+        descendingSet = descendingSet.descendingSet();
+        System.out.println(descendingSet);                         // [2, 4, ..., 48, 50]
+  
+  ```
   
