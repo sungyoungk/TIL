@@ -148,7 +148,8 @@ treeSet.first()                          // (o)
   
    ```
   
-    #### ✅ 데이터 정렬 - descendingSet()
+  #### ✅ 데이터 정렬 - descendingSet()
+  
   ```java
   
         // 15. NavigableSet<E> descendingSet()
