@@ -59,11 +59,11 @@ treeSet.first()                          // (o)
   #### ✅ 데이터 검색
   ```java
   
-  // 1. first
-        System.out.println(treeSet.first());       // -> 2
+        // 1. first
+        System.out.println(treeSet.first());      // -> 2
         
         // 2. last
-        System.out.println(treeSet.last());        // -> 50
+        System.out.println(treeSet.last());       // -> 50
         
         // 3. lower(E element)
         System.out.println(treeSet.lower(26));    // -> 24
@@ -72,7 +72,7 @@ treeSet.first()                          // (o)
         System.out.println(treeSet.higher(26));   // -> 28
         
         // 5. floor(E element)
-        System.out.println(treeSet.floor(24));     // -> 24
+        System.out.println(treeSet.floor(24));    // -> 24
         System.out.println(treeSet.floor(25));    // -> 24
         
         // 6. ceiling(E element)
