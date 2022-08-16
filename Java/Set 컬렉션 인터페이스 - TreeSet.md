@@ -84,8 +84,51 @@ treeSet.first()                          // (o)
    #### ✅ 데이터 꺼내기
   ```java
   
-  
+        // 8. pollLast
+        System.out.println("시작");
+        for(int i = 50; i > 0; i -= 2) {
+            treeSet.add(i);                               // -> 다시 채우기
+        }
+
+       int size2 = treeSet.size();
+        System.out.println(size2);                        // -> 25
+
+        for(int i = 0; i < size2; i++) {
+            System.out.println(treeSet.pollLast());       // -> 50, 48, 46'''     
+        }
+        System.out.println(treeSet.size());               // -> 0
   
   ``` 
 
+   #### ✅ 데이터 부분 집합 생성 - headSet(), tailSet()
+   ```java
+  
+        // 9. SortedSet<E> headSet(E toElement)
+        for ( int i = 50; i >0; i -= 2) {
+            treeSet.add(i);
+        }
+
+        SortedSet<Integer> sSet = treeSet.headSet(20);
+        System.out.println(sSet);
+
+        // 10. NavigableSet<E> headSet(E toElement, boolean inclusive)
+        NavigableSet<Integer> nSet = treeSet.headSet(20, false);
+        System.out.println(nSet);
+
+        nSet = treeSet.headSet(20, true);
+        System.out.println(nSet);
+
+        // 11. SortedSet<E> tailSet(E element)
+        sSet = treeSet.tailSet(20);
+        System.out.println(sSet);
+
+        // 12. NavigableSet<E> tailSet(E element, boolean inclusive)
+        nSet = treeSet.tailSet(20, false);
+        System.out.println(nSet);
+
+        nSet = treeSet.tailSet(20, true);
+        System.out.println(nSet);
+  
+  
+  ```
   
