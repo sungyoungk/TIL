@@ -39,5 +39,46 @@ treeSet.first()                          // (o)
   - **`tailSet(E fromElement, boolean inclusive)`** : fromElement 초과/이상인 모든 원소로 구성된 Set<E> 리턴(inclusive = true 이면 fromElement 포함, false 이면 미포함
   - **`subSet(E fromElement, boolean fromInclusive, E toElement, boolean toInclusive)`** : fromElement 초과/이상인 toElement 미만/이하인 원소들로 이루어진 Set<E> 리턴(inclusive = true 이면 toElement 포함, false 이면 미포함)
   - **`descendingSet()`** : 내림차순의 의미가 아니라 현재 정렬 리준을 반대로 변환
+  
+  <br>
+  
+  #### ✅ 데이터 꺼내기와 출력
+  ```java
+  
+  public class TreeSetAdd {
+    public static void main(String[] args) {
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        for(int i = 50; i > 0; i -=2) {
+            treeSet.add(i);
+        }
+        System.out.println(treeSet.toString());
+    }
+  
+  ```
+  
+  #### ✅ 데이터 검색
+  ```java
+  
+  // 1. first
+        System.out.println(treeSet.first());       // -> 2
+        
+        // 2. last
+        System.out.println(treeSet.last());        // -> 50
+        
+        // 3. lower(E element)
+        System.out.println(treeSet.lower(26));    // -> 24
+        
+        // 4. higher
+        System.out.println(treeSet.higher(26));   // -> 28
+        
+        // 5. floor(E element)
+        System.out.println(treeSet.floor(24));     // -> 24
+        System.out.println(treeSet.floor(25));    // -> 24
+        
+        // 6. ceiling(E element)
+        System.out.println(treeSet.ceiling(25));  // -> 26
+        System.out.println(treeSet.ceiling(26));  // -> 26
+  
+  ```
 
   
