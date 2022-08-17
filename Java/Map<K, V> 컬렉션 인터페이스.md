@@ -63,9 +63,80 @@
 #### ✅ 데이터 추가 - put() / putAll()
 ```java
        
-   
+        // 1. 데이터 추가 - put()
+        hMap1.put(2, "나다라");
+        hMap1.put(1, "가나다");
+        hMap1.put(3, "다라마");
+        System.out.println(hMap1);  // {1=가나다, 2=나다라, 3=다라마}, 입력순서와 불일치, key가 Set<E>로 저장되어 크기순
+
+        // 2. 데이터 추가 - putAll()
+        Map<Integer, String> hMap2 = new java.util.HashMap<>();
+        hMap2.putAll(hMap1);
+        System.out.println(hMap2);              // {1=가나다, 2=나다라, 3=다라마}
        
 ```
 
-#### ✅ 데이터 변경 -
+#### ✅ 데이터 변경 - replace()
+```java
+       
+        // 3. 데이터 변경 - replace()
+        hMap2.replace(1, "가가가");              // {1=가나다, 2=나다라, 3=다라마}
+        hMap2.replace(4, "라라라");              // 동작하지 않음
+        System.out.println(hMap2);
+
+        // 4. 데이터 변경 = replace( K key, V oldValue, V newValue)
+        hMap2.replace(1, "가가가", "나나나");   // hMap2.replace(1, "가가가", "나나나");
+        hMap2.replace(2, "다다다", "라라라");   // 동작하지 않음     
+       
+```
+       
+#### ✅ 데이터 정보 추출 - get() / containsKey() / containsValue() / keySet() / entrySet() / size()
+```java
+       
+        // 5. 데이터 정보 추출 - V get(Object key)
+        System.out.println(hMap2.get(1));
+        System.out.println(hMap2.get(2));
+        System.out.println(hMap2.get(3));
+
+        // 6. 데이터 정보 추출 - containsKey(K key)
+        System.out.println(hMap2.containsKey(1));  // true
+        System.out.println(hMap2.containsKey(5));  // false
+
+        // 7. 데이터 정보 추출 - containsValue(V value)
+        System.out.println(hMap2.containsValue("나나나"));  // true
+        System.out.println(hMap2.containsValue("가가가"));  // false
+
+        //8. 데이터 정보 추출 - ketSet()
+        Set<Integer> keySet = hMap2.keySet();
+        System.out.println(keySet);                       // [1, 2, 3]
+
+        // 9. 데이터 정보 추출 - entrySet()
+        Set<Map.Entry<Integer, String>> entries = hMap2.entrySet();
+        System.out.println(entries);                      // [1=나나나, 2=나다라, 3=다라마]
+
+        // 10. 데이터 정보 추출 - size()
+        System.out.println(hMap2.size());                 //  3
+        System.out.println(hMap2);                        //  {1=나나나, 2=나다라, 3=다라마}      
+       
+```
+       
+#### ✅ 데이터 삭제 - remove() / clear()
+```java
+       
+        // 11 데이터 삭제 - remove()
+        hMap2.remove(1);
+        hMap2.remove(4);                            //  동작 안함
+        System.out.println(hMap2);                       //  {2=나다라, 3=다라마}
+        System.out.println(hMap2.entrySet());            //  [2=나다라, 3=다라마]
+
+        // 12. 데이터 삭제 - remove(K key, V value)
+        hMap2.remove(2, "나다라");
+        hMap2.remove(3, "다다다");                          // 동작하지 않음
+        System.out.println(hMap2.entrySet());             //  [3=다라마]
+
+        // 13. 데이터 삭제 - clear()
+        hMap2.clear();
+        System.out.println(hMap2.entrySet());             // []   
+
+```
        
