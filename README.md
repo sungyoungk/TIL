@@ -10,7 +10,7 @@
 + [Set<E> 컬렉션 인터페이스 - HashSet<E>](https://github.com/sungyoungk/TIL/blob/master/Java/Set%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20-%20HashSet.md)
 + [Set<E> 컬렉션 인터페이스- LinkedHashSet](https://github.com/sungyoungk/TIL/blob/master/Java/Set%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20-%20LinkedHashSet.md)
 + [Set<E> 컬렉션 인터페이스- TreeSet](https://github.com/sungyoungk/TIL/blob/master/Java/Set%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20-%20TreeSet.md)
-+ [Map<K key, V Value> 컬렉션 인터페이스- HashMap<K key, V Value>](https://github.com/sungyoungk/TIL/blob/master/Java/Map%3CK%2C%20V%3E%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
++ [Map 컬렉션 인터페이스- HashMap](https://github.com/sungyoungk/TIL/blob/master/Java/Map%3CK%2C%20V%3E%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
 
 **기타**
 + [자바에서의 형변환 메서드](https://github.com/sungyoungk/TIL/blob/master/Java/%EC%9E%90%EB%B0%94%20%ED%98%95%EB%B3%80%ED%99%98%20%EB%A9%94%EC%86%8C%EB%93%9C.md)
