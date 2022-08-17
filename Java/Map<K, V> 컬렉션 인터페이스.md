@@ -55,4 +55,15 @@
 - 즉, hashCode() 값이 같고, equals() 메서드가 true 이면 같은 객체로 인식한다
 - Key 값을 HashSet<E>로 구현한 Map<K, V> 객체다
 - HashMap<K, V> 은 Key 값을 HashSet<E> 로 구현한 Map<K, V> 객체다(입출력 순서는 보장되지 않는다)
+       
+<br>
+       
+## HashMap<K, V> 주요 메서드
+       
+`데이터 추가`
+```java
+       
+   
+       
+```
 
