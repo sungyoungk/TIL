@@ -15,7 +15,7 @@
 + [Map 컬렉션 인터페이스 - LinkedHashMap](https://github.com/sungyoungk/TIL/blob/master/Java/Map%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20-%20LinkedHashMap.md)
 + [Map 컬렉션 인터페이스 - TreeMap](https://github.com/sungyoungk/TIL/blob/master/Java/Map%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%20-%20TreeMap.md)
 + [Queue<E> 컬렉션 인터페이스](https://github.com/sungyoungk/TIL/blob/master/Java/Queue%3CE%3E%20%EC%BB%AC%EB%A0%89%EC%85%98%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4.md)
-+ [Stack<E> 컬렉션](https://github.com/sungyoungk/TIL/blob/master/Java/Stack%3CE%3E%20%EC%BB%AC%EB%A0%89%EC%85%98.md)
++ [Stack<E> 컬렉션 클래스](https://github.com/sungyoungk/TIL/blob/master/Java/Stack%3CE%3E%20%EC%BB%AC%EB%A0%89%EC%85%98.md)
 
 
 **기타**
