@@ -105,3 +105,21 @@
   
 ```
   
+
+  <br>
+  
+
+#### ✅ 데이터 정렬 - descendingKeySet() / descendingMap()
+-  🚩 **`descendingKeySet()`** 메서드는 내림차순 정렬이 아니라, 현재 정렬 상태를 바꾸는 것이다
+- `descendingMap()` 매서드는 Map<K,V> 객체로 나온다는점만 다르고 마찬가지로 현재 정렬상태를 바꾼다
+  
+```java
+        // 15. NavigableSet<K> descendingKeySet()
+        NavigableSet<Integer> navigableSet = treeMap.descendingKeySet();
+        System.out.println(navigableSet);                   //  [18, 16, 14, 12, 10, 8, 6, 4]
+
+        //16. NavigableMAp<K, V> descendingMAp()
+        navigableMap =  treeMap.descendingMap();
+        System.out.println(navigableMap);                   // {18=18번째 데이터, 16=16번째 데이터, ..., 6=6번째 데이터, 4=4번째 데이터}
+        System.out.println(navigableMap.descendingMap());   // {4=4번째 데이터, 6=6번째 데이터, ..., 16=16번째 데이터, 18=18번째 데이터} 
+```
