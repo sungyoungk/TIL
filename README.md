@@ -53,7 +53,7 @@
 
 ## 🔥 알고리즘 이론
 + [버블정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC.md)
-
++ [선택정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%84%A0%ED%83%9D%EC%A0%95%EB%A0%AC.md)
 
 
 ## 🔥 Algorithm
