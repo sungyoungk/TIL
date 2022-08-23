@@ -52,6 +52,7 @@
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
 
 ## ⌨️ 알고리즘 이론
+  #### 정렬(sort) 알고리즘
 + [버블정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC.md)
 + [선택정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%84%A0%ED%83%9D%EC%A0%95%EB%A0%AC.md)
 + [삽입정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%82%BD%EC%9E%85%EC%A0%95%EB%A0%AC.md)
