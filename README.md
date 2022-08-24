@@ -60,7 +60,7 @@
 + [재귀용법(재귀호출, Recursive Call)](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%9E%AC%EA%B7%80%EC%9A%A9%EB%B2%95.md)
 
 #### 동적계획법 vs 분할정복
-[동적계획법 vs 분할정복](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95%20%26%20%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5.md)
++ [동적계획법 vs 분할정복](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95%20%26%20%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5.md)
 
 ## 🔥 Algorithm
 + [숫자의 합_백준 11720](https://github.com/sungyoungk/TIL/blob/master/algorithm/001%20%EC%88%AB%EC%9E%90%EC%9D%98%ED%95%A9.md)
