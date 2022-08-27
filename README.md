@@ -56,6 +56,7 @@
 + [버블정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC.md)
 + [선택정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%84%A0%ED%83%9D%EC%A0%95%EB%A0%AC.md)
 + [삽입정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%82%BD%EC%9E%85%EC%A0%95%EB%A0%AC.md)
++ [병합정렬](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EB%B3%91%ED%95%A9%EC%A0%95%EB%A0%AC.md)
 #### 재귀용법
 + [재귀용법(재귀호출, Recursive Call)](https://github.com/sungyoungk/TIL/blob/master/algorithm/%EC%9E%AC%EA%B7%80%EC%9A%A9%EB%B2%95.md)
 
