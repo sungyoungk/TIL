@@ -52,6 +52,10 @@
 #### 빈 스코프 [(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
 + [빈스코프 개요](https://github.com/sungyoungk/TIL/blob/master/Spring/%EB%B9%88%EC%8A%A4%EC%BD%94%ED%94%84.md)
 + [프로토타입 스코프- 싱글톤 빈과 함께 사용할 경우 문제 발생!](https://github.com/sungyoungk/TIL/blob/master/Spring/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%8A%A4%EC%BD%94%ED%94%84%20-%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EB%AC%B8%EC%A0%9C%EC%A0%90.md)
++ [프로토타입 스코프 - 싱글톤 빈과 함께 사용시 provider로 해결!](https://github.com/sungyoungk/TIL/blob/master/Spring/%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%20%EC%8A%A4%EC%BD%94%ED%94%84%20-%20%EC%8B%B1%EA%B8%80%ED%86%A4%20%EB%B9%88%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20provider%EB%A1%9C%20%ED%95%B4%EA%B2%B0!.md)
+
+
+
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
