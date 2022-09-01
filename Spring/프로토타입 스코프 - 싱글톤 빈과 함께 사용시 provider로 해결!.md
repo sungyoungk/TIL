@@ -145,4 +145,102 @@ public class PrototypeProviderTest {
 <br>
 
 ## 3️⃣ JSR-330 Provider
+- `javax.inject/provider` 라는 JSR - 330 자바표준을 사용하는 방법
+- 해당 방법은 자바 표준임으로 라이브러리가 필요하다 `javax.inject:javax.inject:1`
 
+#### 👀 javax.inject.Provider 내부 코드
+```java
+
+ package javax.inject;
+  public interface Provider<T> {
+        T get(); }
+
+```
+
+#### ✅ 예시코드 - JSR - 330 Provider
+- gradle에 `implementation 'javax.inject:javax.inject:1'` 추가하기
+- ObjectProvider 과 비교시 코드 차이점은... `ObjectProvider -> Provier / .getObject() -> .get()`
+
+```java
+@Autowired
+private Provider<PrototypeBean> provider;
+  public int logic() {
+      PrototypeBean prototypeBean = provider.get();
+      prototypeBean.addCount();
+      int count = prototypeBean.getCount();
+      return count;
+}
+
+```
+
+
+`전체코드`
+- 실행시 `Provider.get()`매서드로 항상 새로운 프로토타입 빈이 생성된다
+- provider의 `.get()`을 호출하면 스프링 컨테이너를 통해 해당 빈을 찾아서 반환한다 **🌟(DL)**
+- JSR - 330 Provider 는 자바 표준으로 기능이 단순해서 단위테스트를 만들거나 mock 코드를 만들기 쉬워진다
+- **Provider 는 딱 필요한 DL 정도의 기능만 제공한다**
+
+### 📌 JSR - 330 Provider의 특징
+- .get() 메서드 하나로 기능이 단순하다
+- 별도의 라이브러리가 필요하다(스프링에 종속되지 않는 자바 표준이기 때문에...)
+- 자바 표준이므로 스프링이 아닌 다른 컨테이너에서도 사용가능하다
+
+```java
+public class PrototypeProviderTest {
+
+    @Test
+    void providerTest(){
+        AnnotationConfigApplicationContext ac =
+                new AnnotationConfigApplicationContext(ClientBean.class, PrototypeBean.class);
+
+        ClientBean clientBean1 = ac.getBean(ClientBean.class);
+        int count1 = clientBean1.logic();
+        assertThat(count1).isEqualTo(1);
+
+        ClientBean clientBean2 = ac.getBean(ClientBean.class);
+        int count2 = clientBean2.logic();
+        assertThat(count2).isEqualTo(1);
+    }
+
+    @Scope("singleton")
+    static class ClientBean{
+        @Autowired
+        private Provider<PrototypeBean> provider;
+
+
+        public int logic() {
+            PrototypeBean prototypeBean = provider.get();
+            prototypeBean.addcount();
+            int count = prototypeBean.getCount();
+            return count;
+        }
+    }
+
+    @Scope("prototype")
+    static class PrototypeBean {
+        private int count = 0;
+
+        public void addcount() {
+            count++;
+        }
+
+        public int getCount() {
+            return count;
+        }
+
+        @PostConstruct
+        public void init() {
+            System.out.println("PrototypeBean.init" + this);
+        }
+
+        @PreDestroy
+        public void destroy() {
+            System.out.println("prototypeBean.destroy");
+        }
+    }
+
+
+
+}
+
+```
