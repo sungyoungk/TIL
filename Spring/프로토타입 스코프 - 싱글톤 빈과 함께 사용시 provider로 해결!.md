@@ -82,8 +82,8 @@ public class PrototypeProviderTest {
 - **ObjectProvider 은 딱 필요한 DL 정도의 기능만 제공한다**
 
 ### 📌ObjectFactory vs ObjectProvider
-- **ObjectFactory : ** 기능이 단순하고 별도의 라이브러리가 필요없다. 스프링에 의존한- ㅒㅠㅓ
-- ObjectProvider은 ObjectFactory를 상속받은 인터페이스로 상속, 옵션, 스트림처리같은 편의기능이 많다
+- **ObjectFactory :** 기능이 단순하고 별도의 라이브러리가 필요없다. 스프링에 의존한다
+- **ObjectProvider :** ObjectFactory를 상속한것이다. 옵션, 스트림 처리 등의 편의 기능이 많고 별도의 라이브러리가 필요없다(스프링에 의존하기 때문)
 ```java
 
 public class PrototypeProviderTest {
@@ -141,3 +141,8 @@ public class PrototypeProviderTest {
 }
 
 ```
+
+<br>
+
+## 3️⃣ JSR-330 Provider
+
