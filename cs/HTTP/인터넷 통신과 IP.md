@@ -28,6 +28,8 @@
 
 <img width="786" alt="스크린샷 2022-09-03 오후 7 21 34" src="https://user-images.githubusercontent.com/101084642/188266315-2603002c-4d74-4751-9c0b-1f1852a98f38.png">
 
+<br>
+
 ## 💔 IP 프로토콜의 한계
 
 ### 1️⃣ 비연결성
