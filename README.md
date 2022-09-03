@@ -56,6 +56,7 @@
 + [웹 스코프 개요](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%9B%B9%EC%8A%A4%EC%BD%94%ED%94%84.md)
 + [request 스코프](https://github.com/sungyoungk/TIL/blob/master/Spring/request%20%EC%8A%A4%EC%BD%94%ED%94%84.md)
 + [스코프와 프로바이더](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20provider%20.md)
++ [웹스코프와 프록시](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%9B%B9%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)
 
 
 
