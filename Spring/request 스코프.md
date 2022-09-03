@@ -132,3 +132,22 @@ public class LogDemoService {
 
 ```
 
+
+<br>
+
+### 💔 실행결과 - 오류발생
+
+<img width="1183" alt="스크린샷 2022-09-03 오전 10 44 26" src="https://user-images.githubusercontent.com/101084642/188251434-4f03b425-c11b-43df-8e94-00b7f2e6ce1a.png">
+
+- controller 와 service 계층에 myLogger 가 주입되어 있다.
+- 그런데, MyLogger는 request 스코프 빈이다
+- 즉 클라이언트 요청이 있기 전 까지는 빈이 생성되지 않기때문에 오류가 발생한다
+- 이것을 ObjectProvider 를 사용하여 먼저 ObjectProvider를 주입하고 이후에 DL(Dependency Lookup, 의존 탐색)로 myLogger를 가져온다
+
+```text
+Error creating bean with name 'myLogger': Scope 'request' is not active for the
+  current thread; consider defining a scoped proxy for this bean if you intend to
+  refer to it from a singleton;
+
+```
+
