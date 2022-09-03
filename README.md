@@ -61,7 +61,7 @@
 ## 🖥 CS
 ### HTTP[(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
 #### 인터넷 네트워크
-+[인터넷 통신과 IP(인터넷 프로토콜)]()
++ [인터넷 통신과 IP(인터넷 프로토콜)]()
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
