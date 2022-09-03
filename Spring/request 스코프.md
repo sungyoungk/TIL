@@ -111,9 +111,12 @@ public class LogDemoController {
 ```
 
 
-#### ✅ DemoService 
-- 서비스 계층에서도 로그 출력해보기
-- 
+#### ✅ DemoService - 서비스 계층에서도 로그 출력해보기
+> 🌟 MyLogger 빈을 request 스코프로 지정하지 않으면...
+  1. 모든 정보를 서비스 계층에 넘기면 파라미터가 많아서 지저분해진다
+  2. requestURL 같은 웹 관련 정보가 관련없는 서비스 계층까지 넘어가게 된다
+  3. 서비스 계층은 웹기술에 종속되지 않고, 순수하게 유지하는것이 유지보수에 좋다
+  4. MyLogger가 request 스코프이기 때문에 이런 부분을 파라미터로 넘기지 않고, MyLogger의 멤버변수에 저장해서 코드와 계층을 깔끔하기 유지 가능하다 
 
 ```java
 @Service
