@@ -64,7 +64,8 @@
 + [인터넷 통신과 IP(인터넷 프로토콜)](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9D%B8%ED%84%B0%EB%84%B7%20%ED%86%B5%EC%8B%A0%EA%B3%BC%20IP.md)
 + [TCP, UDP](https://github.com/sungyoungk/TIL/tree/master/cs/HTTP)
 + [PORT](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/Port.md)
-+ [DNS](https://github.com/sungyoungk/TIL/blob/master/cs/DNS.md)
++ [DNS](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/DNS.md)
++ [URI](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/URI.md)
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
