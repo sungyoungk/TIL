@@ -66,7 +66,7 @@
 + [PORT](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/Port.md)
 + [DNS](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/DNS.md)
 + [URI](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/URI.md)
-+ [웹브라우저 요청의 흐름](https://github.com/sungyoungk/TIL/new/master/cs/HTTP)
++ [웹브라우저 요청의 흐름](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EC%9A%94%EC%B2%AD%EC%9D%98%20%ED%9D%90%EB%A6%84.md)
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
