@@ -33,3 +33,37 @@
 ### URL 문법
 
 <img width="628" alt="스크린샷 2022-09-05 오후 7 17 08" src="https://user-images.githubusercontent.com/101084642/188426409-bec9a15b-6f1d-460e-871c-953ceaa70785.png">
+
+### 📌 URL Scheme(스키마)
+- 주로 **프로토콜** 사용
+- **프로토콜** : 클라이언트, 서버간 규칙으로 어떻게 자워에 접근할 것인가 약속하는 규칙
+  - ex) http, https, ftp 등
+- http 는 80 포트, https 는 430 포트를 주로 사용하고, 포트는 생략 가능하다
+- https는 http에 보안이 추가된 프로토콜  
+
+<br>
+
+### 📌 URL Port
+- 접속 포트
+- 일반적으로 생략, 생략시 `http는 80, https는 430` 이 디폴트값
+
+<br>
+
+### 📌 URL Path(리소스가 있는 경로)
+- 리소스가 있는 경로로 계층적 구조로 되어 있음
+  - ex) /home/file1.jpg
+
+<br>
+
+### 📌 URL query(쿼리)
+- key=value 형태임
+- `?` 로 시작, `&`로 주가 가능 **`?keyA=valueA&keyB=valueB`**
+- query 파라미터, query 스트링이라고도 부른다
+
+<br>
+
+### 📌 URL fragment
+- html 내부에서 이동시에 보통 사용한다
+- html 내부 북마크등에서 사용하고, 서버로 전송되는 정보는 아니다
+- 잘 사용하지 않는다
+
