@@ -76,7 +76,7 @@
 + [HTTP 메시지](https://github.com/sungyoungk/TIL/tree/master/cs/HTTP)
 
 #### HTTP 메서드
-+ [HTTP API 만들기](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%EB%A9%94%EC%86%8C%EB%93%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
++ [HTTP API 만들기](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20API%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 
 
 
