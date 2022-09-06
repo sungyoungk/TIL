@@ -71,7 +71,7 @@
 #### HTTP 기본
 + [HTTP - 개요](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%EA%B0%9C%EC%9A%94.md)
 + [클라이언트와 서버구조](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%99%80%20%EC%84%9C%EB%B2%84%EA%B5%AC%EC%A1%B0.md)
-
++ [Stateful, Stateless](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/Stateful%2C%20Stateless.md)
 
 
 
