@@ -1,6 +1,6 @@
 # 비연결성(connectionless)
 
-<img width="677" alt="스크린샷 2022-09-06 오후 6 03 26" src="https://user-images.githubusercontent.com/101084642/188594222-1741bff6-11fe-4d39-aad9-7b98b43237dd.png">
+<img width="981" alt="스크린샷 2022-09-06 오후 6 07 27" src="https://user-images.githubusercontent.com/101084642/188595128-d544b4f4-a379-4875-af98-904448f91e4f.png">
 
 - HTTP는 기본이 연결을 유지하지 않는 모델이다
 - 일반적으로 초 단위 이하의 빠른 속도로 응답한다
