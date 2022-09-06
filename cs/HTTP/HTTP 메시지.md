@@ -54,8 +54,26 @@
 
 <br>
 
-### 응답 메시지 - HTTP 헤더
+## 📚 HTTP 헤더
 - header-field = field-name ":" OWS fied-value OWS (OWS : 띄어쓰기 허용)
 - field name은 대소문자 구분이 없음
 
+<img width="738" alt="스크린샷 2022-09-06 오후 11 04 06" src="https://user-images.githubusercontent.com/101084642/188655838-36c4837f-cf75-4479-8335-301a39db4856.png">
+
+<br>
+
+###  HTTP 헤더의 용도
+- HTTP 전송에 필요한 모든 부가정보 <br>
+ex) 메시지 바디의 내용, 메시지 바디 크기, 압축, 인증, 요청 클라이언트(브라우저) 정보, 서버 애플리케이션 정보, 캐시 관리 정보, etc...
+- 표준 헤더가 너무 많다(https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
+- 필요시 임의의 헤더 추가 가능
+
+<br>
+
+###  HTTP 메세지 바디의 용도
+
+- 실제 전송할 데이터
+- HTML문서, 이미지, 영상 JSON 등.. byte로 표현 가능한 모든 데이터 전송 
+
+<img width="375" alt="스크린샷 2022-09-06 오후 11 08 32" src="https://user-images.githubusercontent.com/101084642/188656819-cb85df40-a9c2-455b-9f26-b45f3fbef1ed.png">
 
