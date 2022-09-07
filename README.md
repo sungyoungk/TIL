@@ -77,7 +77,7 @@
 
 #### HTTP 메서드
 + [HTTP API 만들기](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20API%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
-
++ [GET, POST](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP%EB%A9%94%EC%84%9C%EB%93%9C%20-%20GET,%20POST.md)
 
 
 
