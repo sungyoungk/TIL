@@ -81,7 +81,7 @@
 + [PUT, PATCH, DELETE](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/PUT%2C%20PATCH%2CDELETE.md)
 #### HTTP 메서드 활용
 + [클라이언트에서 서버로 데이터 전송](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md)
-+ [HTTP API 설계하기]()
++ [HTTP API 설계예시](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20API%20%EC%84%A4%EA%B3%84%20%EC%98%88%EC%8B%9C.md)
 
 
 
