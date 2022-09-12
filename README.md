@@ -62,7 +62,7 @@
 ### HTTP[(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
 #### 인터넷 네트워크
 + [인터넷 통신과 IP(인터넷 프로토콜)](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9D%B8%ED%84%B0%EB%84%B7%20%ED%86%B5%EC%8B%A0%EA%B3%BC%20IP.md)
-+ [TCP, UDP](https://github.com/sungyoungk/TIL/tree/master/cs/HTTP)
++ [TCP, UDP](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/TCP%2C%20UDP.md)
 + [PORT](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/Port.md)
 + [DNS](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/DNS.md)
 + [URI](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/URI.md)
