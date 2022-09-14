@@ -81,13 +81,17 @@
 <br>
 
 ## 📌 정리
-**- HTTP API - 컬렉션**
+- **HTTP API - 컬렉션**
    - `POST 기반` 등록
    - 서버가 리소스 URI 결정
-**-  HTTP API - 스토어**
+-  **HTTP API - 스토어**
   - `PUT 기반` 등록
   - 클라이언트가 리소스 URI 결정
-**- HTML FORM 사용**
+- **HTML FORM 사용**
   - 순수 HTML + HTML form 사용
-  - GET POST 만 지원  
+  - GET POST 만 지원 
+- 컨트롤러, 컨트롤 URI
+  - 문서, 컬렉션, 스토어로 해결하기 어려운 추가 프로세스 실행
+  - 동사를 직접 사용한다
+  - 예시) /members/{id}/**delete**   
 
