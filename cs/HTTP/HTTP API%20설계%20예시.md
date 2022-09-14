@@ -94,4 +94,6 @@
     - 문서, 컬렉션, 스토어로 해결하기 어려운 추가 프로세스 실행
     - 동사를 직접 사용한다
     - 예시) /members/{id}/**delete**   
+  
+  참고 [restful API 설계 practice](https://restfulapi.net/resource-naming)
 
