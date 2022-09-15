@@ -94,7 +94,7 @@
 + [HTTP 상태코드](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%EC%83%81%ED%83%9C.md)
 
 #### HTTP 헤더 - 일반헤더
-+[HTTP 헤더 - 개요](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%20%ED%97%A4%EB%8D%94%20-%20%EA%B0%9C%EC%9A%94.md)
++ [HTTP 헤더 - 개요](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%20%ED%97%A4%EB%8D%94%20-%20%EA%B0%9C%EC%9A%94.md)
 
 
 
