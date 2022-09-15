@@ -58,6 +58,11 @@
 + [스코프와 프로바이더](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20provider%20.md)
 + [웹스코프와 프록시](https://github.com/sungyoungk/TIL/blob/master/Spring/%EC%9B%B9%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80%20%ED%94%84%EB%A1%9D%EC%8B%9C.md)
 
+
+
+
+
+
 ## 🖥 CS
 ### HTTP[(reference)](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
 #### 인터넷 네트워크
@@ -80,17 +85,24 @@
 + [GET, POST](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%20GET%2C%20POST.md)
 + [PUT, PATCH, DELETE](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/PUT%2C%20PATCH%2CDELETE.md)
 + [HTTP 메서드 속성](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%EB%A9%94%EC%86%8C%EB%93%9C%EC%9D%98%20%EC%86%8D%EC%84%B1.md) 
+
 #### HTTP 메서드 활용
 + [클라이언트에서 서버로 데이터 전송](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%97%90%EC%84%9C%20%EC%84%9C%EB%B2%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md)
 + [HTTP API 설계예시](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%08HTTP%20API%20%EC%84%A4%EA%B3%84%20%EC%98%88%EC%8B%9C.md)
+
 #### HTTP 상태코드
 + [HTTP 상태코드](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%EC%83%81%ED%83%9C.md)
+
+#### HTTP 헤더 - 일반헤더
++[HTTP 헤더 - 개요](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%20%ED%97%A4%EB%8D%94%20-%20%EA%B0%9C%EC%9A%94.md)
+
 
 
 
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
+
 
 
 
