@@ -99,6 +99,11 @@
 + [전송방식](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%A0%84%EC%86%A1%EB%B0%A9%EC%8B%9D.md)
 + [일반정보 & 특별정보](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9D%BC%EB%B0%98%EC%A0%95%EB%B3%B4%20%26%20%ED%8A%B9%EB%B3%84%EC%A0%95%EB%B3%B4.md)
 + [인증(Authorization)](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9D%B8%EC%A6%9D.md)
++ [쿠키](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%BF%A0%ED%82%A4.md)
+
+
+
+
 
 ## 🐧 Linux
 + [실전프로젝트 리눅스 명령어 정리](https://github.com/sungyoungk/TIL/blob/master/Linux/%EC%8B%A4%EC%A0%84%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC.md)
