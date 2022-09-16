@@ -96,7 +96,7 @@
 #### HTTP 헤더 - 일반헤더
 + [HTTP 헤더 - 개요](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/HTTP%20%20%ED%97%A4%EB%8D%94%20-%20%EA%B0%9C%EC%9A%94.md)
 + [콘텐츠 협상](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%BD%98%ED%85%90%EC%B8%A0%20%ED%98%91%EC%83%81.md)
-
++ [전송방식](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%A0%84%EC%86%A1%EB%B0%A9%EC%8B%9D.md)
 
 
 
