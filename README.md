@@ -101,7 +101,8 @@
 + [인증(Authorization)](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%9D%B8%EC%A6%9D.md)
 + [쿠키](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%BF%A0%ED%82%A4.md)
 
-
+#### HTTP 헤더2 - 캐시와 조건부 요청
++ [캐시 기본동작](https://github.com/sungyoungk/TIL/blob/master/cs/HTTP/%EC%BA%90%EC%8B%9C%20%EA%B8%B0%EB%B3%B8%20%EB%8F%99%EC%9E%91.md)
 
 
 
