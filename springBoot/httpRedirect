@@ -1,2 +1,71 @@
-HTTP REDIRECT 
+
+
+## 🔎 HTTP REDIRECT  <br>
+- Spring Boot 에서 임베디드 톰켓 서버를 이용할 때 디폴트 서버로 HTTP 또는 HTTPS 를 선택해야 하는데, 이 때 HTTP 로 접속할 경우 HTTPS 로 redirect 시켜주는 방법 <br>
+- Spring Boot 2.0 버전부터 아래와 같이 config 파일을 작성하면 80 포트로 들어오는 요청을 433 포트로 전환 가능 <br>
+
+<br>
+package com.jane.backoffice.web.configs;
+
+import org.apache.catalina.Context;
+import org.apache.catalina.connector.Connector;
+import org.apache.tomcat.util.descriptor.web.SecurityCollection;
+import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
+import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HttpRedirectConfig {
+  @Bean
+  public ServletWebServerFactory servletContainer() {
+    TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
+      @Override
+      protected void postProcessContext(Context context) {
+        SecurityConstraint securityConstraint = new SecurityConstraint();
+        securityConstraint.setUserConstraint("CONFIDENTIAL");
+        SecurityCollection collection = new SecurityCollection();
+        collection.addPattern("/*");
+        securityConstraint.addCollection(collection);
+        context.addConstraint(securityConstraint);
+      }
+    };
+
+    tomcat.addAdditionalTomcatConnectors(createSslConnector());
+    return tomcat;
+  }
+
+  private Connector createSslConnector() {
+    Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
+    connector.setPort(80);
+    connector.setScheme("http");
+    connector.setSecure(false);
+    connector.setRedirectPort(443);
+    return connector;
+  }
+}
+
+<br>
+<br>
+
+이 때, ERR_TOO_MANY_REDIRECTS 오류가 발생할 수 있다.
+
+이는 리디렉션이 서로 연결되어 있다는 사실에서 비롯되는데,
+예를 들어 http://example.com 은 https://example.com 로 리디렉션되고
+https://example.com 은 다시 http://example.com 으로 리디렉션되어지는 것으로,
+이 프로세스는 서버에 의해 설정된 리디렉션 횟수에 도달할 때까지 무한 반복 될 수 있으며,
+초과되면 서버는 리디렉션 처리 시도를 중지되고
+Apache 에서는 브라우저가 처리하는 비하인드 자동 리디렉션 대신 화면에서
+"이 페이지를 찾을 수 있습니다" 메시지(실제 리디렉션 페이지)를 보고 이를 확인할 수 있다.
+
+ 
+
+이 문제를 해결하기 위해서는 아래와 같이 HTTP 헤더에 더이상 위치 값이 보이지 않을 때까지
+URL 을 계속 따르라는 명령을 주면 해결된다.
+<br>
+
+tomcat:
+  protocol_header: x-forwarded-proto
+  remote_ip_header: x-forwarded-for
 
