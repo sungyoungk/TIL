@@ -1,0 +1,18 @@
+TIL 24.07.11(목)
+
+(이슈)properties 파일을 gitignore 했음에도 해당 파일 변경사항이 무시되지 않음
+
+(원인)이미 해당 파일이 캐싱되어 git에서 관리되고 있을 경우, gitignore 해도 적용되지 않음
+
+(해결방안)
+## 1. 캐시에서 파일 제거
+ git rm --cached webapp/WEB-INF/config/database/database_local.properties
+
+## 2. .gitignore 파일을 수정한 후 저장하고 커밋
+ git add .gitignore
+ git commit -m "Update .gitignore to ignore database_local.properties"
+
+ ## 변경 사항을 반영하기 위해 Git 상태를 확인하고 변경 사항을 커밋
+ git status
+ git add .
+ git commit -m "Remove cached database_local.properties and update .gitignore"
