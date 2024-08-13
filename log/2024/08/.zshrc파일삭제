@@ -1,0 +1,28 @@
+/<--* .zshrc파일들이 임시저장돼 있어서 postgresql version이 꼬여 있음  *-->/
+
+sungyoung@Sungui-MacBookPro ~ % vi ~
+sungyoung@Sungui-MacBookPro ~ % cd   
+sungyoung@Sungui-MacBookPro ~ % ls -al
+total 5331584
+
+
+sungyoung@Sungui-MacBookPro ~ % vi .zshrc
+sungyoung@Sungui-MacBookPro ~ % vi .zshrc
+sungyoung@Sungui-MacBookPro ~ % vi .zshrc
+sungyoung@Sungui-MacBookPro ~ % ls -al   
+
+
+sungyoung@Sungui-MacBookPro ~ % rm -rf .zshrc.swl
+sungyoung@Sungui-MacBookPro ~ % rm -rf .zshrc.swm
+sungyoung@Sungui-MacBookPro ~ % rm -rf .zshrc.swn
+sungyoung@Sungui-MacBookPro ~ % rm -rf .zshrc.swo
+sungyoung@Sungui-MacBookPro ~ % rm -rf .zshrc.swp
+sungyoung@Sungui-MacBookPro ~ % vi .zshrc        
+sungyoung@Sungui-MacBookPro ~ % source .zshrc 
+sungyoung@Sungui-MacBookPro ~ % psql -V
+psql (PostgreSQL) 12.19
+
+위 명령어를 사용해서 .zshrc.~ 파일들을 삭제 후 postgres 명령어 확인하면 정상적으로 버전이 뜬다.
+
+
+
